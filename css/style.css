@@ -1,3 +1,4 @@
+/* PRINCIPAL */
 
 body{
 	font-family: sans-serif;
@@ -5,6 +6,45 @@ body{
 	padding: 0px;
 
 }
+
+/* SOCIAL */
+
+.social{
+	position: fixed;
+	right: 0;
+	top: 200px;
+	z-index: 2000;
+}
+
+.social ul{
+	list-style: none;
+}
+
+.social ul li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.icon-facebook{
+
+}
+
+
+/* FIM DO SOCIAL */
+
+/* LOGO */
+
+.Logo{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left; 
+	margin-top: -2px;
+}
+
+/* FIM DO LOGO */
 
 
 /* LAYOUT HOME */
@@ -26,23 +66,39 @@ body{
 	background-color: #000000;
 }
 
-/**** Titulo (Ban) *****/
+
+.Destaque{
+	padding: 150px 0px 200px 0px; /* box model */
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
 .titulo{
-	margin-top: -350px;
-	margin-left: 0px;
-	padding: -10px;
+	margin-top: -310px;
+	margin-left: 20px;
 	color: #ffffff;
 	font-size: 40pt;
 }
 
-/**** Texto abaixo do titulo ****/
 .texto{
 	margin-top: -30px;
-	margin-left: 0px;
+	margin-left: 20px;
 	color: #ffffff;
 }
 
-/**** Botao detalhes ******/
+.titulo2{
+	margin-top: -550px;
+	margin-left: 250px;
+	color: #ffffff;
+	font-size: 40pt;
+}
+
+.texto2{
+	margin-top: -15px;
+	margin-left: 250px;
+	color: #ffffff;
+}
+
 .botao{
 	width: 100px;
 	padding: 10px 0px 10px 0px;
@@ -53,26 +109,33 @@ body{
 	font-size: 0.875em;
 	position: absolute;
 	text-align: center;
-	right: 1205px;
+	right: 1183px;
 	bottom: -60px;
 
 }
 
-/***** imagem de fundo ******/
+.botao2{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #DCDCDC;
+	color: #000000;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 953px;
+	bottom: -1260px;
+
+}
+
 .foto{
 	margin-left: -230px;
 	margin-top: -120px;
 }
 
 
-.Destaque{
-	padding: 150px 0px 200px 0px; /* box model */
-	max-width: 1024px;
-	margin: 0 auto;
-}
-
-
-/* FIM DO LAYOUT */
+/* FIM DO LAYOUT HOME*/
 
 /* MENU */
 
@@ -88,6 +151,7 @@ nav ul{
 	list-style: none;
 	text-align: center;
 	margin-top: -10px;
+	margin-right: 60px;
 
 }
 
@@ -121,7 +185,7 @@ nav ul li a:hover{
 }
 
 .h1conteudo{
-	margin-top: 25px;
+	margin-top: 45px;
 	text-align: center;
 }
 
@@ -179,3 +243,32 @@ nav ul li a:hover{
 }
 
 /* FIM DO FORMULARIO CONTATO */
+
+/* PAGINA PECADOS */
+
+.meliodas{
+	padding: 10px;
+	margin-left: 620px;
+}
+
+.ban{
+	margin-left: 300px;
+	padding: 10px;
+}
+
+.diane{
+	padding: 10px;
+	margin-left: 300px;
+}
+
+.logo{
+	margin-top: 10px;
+}
+
+.gif{
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* FIM DA PAGINA PECADOS */	
+
