@@ -3,25 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="icon" href="imagens/icon.jpg">
-	<title>Ban</title>
+	<title>Ban - Home</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
 
 </head>
 <body>
 
+	<header class="Logo">
+		<img class="logo2" src="imagens/logo.jpg" alt="Pecado da Ganância">
+	</header>
+
 	<!-- MENU -->
 
-	<nav>
-		<ul>
-			<img class ="Logo" src="imagens/logo.jpg" alt="pecado da ganância">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="sobre.html">Sobre</a></li>
-			<li><a href="conteudo.html">Conteúdo</a></li>
-			<li><a href="contato.html">Contato</a></li>
-			<li><a href="pecados.html">Pecados</a></li>
 
-		</ul>
-	</nav>
+		<div class="menu-overlay"></div>
+		<nav class="menu">
+		<a href="#" class="menu-open">&#9776 Menu</a>
+
+		<div class="side-menu-wrapper">
+		<a href="#" class="menu-close">×</a>
+		<ul>
+		<li><a href="index.html"  rel="nofollow">Home</a></li>
+		<li><a href="sobre.html"  rel="nofollow">Sobre</a></li>
+		<li><a href="conteudo.html"  rel="nofollow">Conteúdo</a></li>
+		<li><a href="contato.html"  rel="nofollow">Contato</a></li>
+		<li><a href="pecados.html"  rel="nofollow">Pecados</a></li>
+		</nav>
+		</div>
+	
 
 	<!-- REDES SOCIAIS -->
 
@@ -39,7 +51,7 @@
 	<!-- CONTEUDO LAYOUT -->
 
 	<div class="Layout" style="background-image:url('imagens/ban1.png');">
-	<p>Saiba tudo sobre Ban dos 7 Pecados Capitais</p>
+	<p>Saiba mais sobre Ban dos 7 Pecados Capitais</p>
 	</div>
 
 	
@@ -72,6 +84,10 @@
 		</div>
 
 	
-
+		<script src="js/menuresponsivo.js"></script>
+		<script src="js/fixamenu.js"></script>
+		<script src="js/removeclick.js"></script>	
+		<!-- <script src="js/janela.js"></script> -->
+		<script src="js/menulateral.js"></script>
 </body>
 </html>

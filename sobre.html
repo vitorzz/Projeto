@@ -6,41 +6,58 @@
 	<title>Sobre</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/estiloso.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
 	<script src="js/slide.js"></script>
 </head>
 <body>
 
+	<header class="Logo">
+		<img class="logo2" src="imagens/logo.jpg" alt="Pecado da Ganância">
+	</header>
+
 	<!-- MENU -->
 
-	<nav>
-		<ul>
-			<img class ="Logo" src="imagens/logo.jpg" alt="pecado da ganância">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="sobre.html">Sobre</a></li>
-			<li><a href="conteudo.html">Conteúdo</a></li>
-			<li><a href="contato.html">Contato</a></li>
-			<li><a href="pecados.html">Pecados</a></li>
 
-		</ul>
-	</nav>
+		<div class="menu-overlay"></div>
+		<nav class="menu">
+		<a href="#" class="menu-open">&#9776 Menu</a>
+
+		<div class="side-menu-wrapper">
+		<a href="#" class="menu-close">×</a>
+		<ul>
+		<li><a href="index.html"  rel="nofollow">Home</a></li>
+		<li><a href="sobre.html"  rel="nofollow">Sobre</a></li>
+		<li><a href="conteudo.html"  rel="nofollow">Conteúdo</a></li>
+		<li><a href="contato.html"  rel="nofollow">Contato</a></li>
+		<li><a href="pecados.html"  rel="nofollow">Pecados</a></li>
+		</nav>
+		</div>
+
+		<div class="h1conteudo">
+			<h1>Site Desenvolvido por Vitor Souza Zelli</h1>
+		</div>
+
+		<br><br>
+
+		<!-- SLIDES -->
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="imagens/hosp.jpg" height="500" width="100" style="width:100%">
+  <img src="imagens/ban11.jpg" height="500" width="100" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="imagens/ninjamock.png" height="500" width="100" style="width:100%">
-  <div class="text">Caption Two</div>
+  <img src="imagens/nanatsu2.png" height="500" width="100" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="imagens/git.jpg" height="500" width="100" style="width:100%">
-  <div class="text">Caption Three</div>
+  <img src="imagens/nanatsu4.jpg" height="500" width="100" style="width:100%">
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -55,6 +72,55 @@
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
-	
+<script>
+
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<!-- HOSPEDAGEM -->
+
+<div class="github">
+	<a href="https://github.com/vitorzz" target="blank"><img src="imagens/github.png"></a>
+</div>
+
+<div class="ninjamock">
+	<img src="imagens/ninjamock.png"> 
+</div>
+
+<div class="webhost">
+	<img src="imagens/webhost.png"> 
+</div>
+
+		<script src="js/menuresponsivo.js"></script>
+		<script src="js/fixamenu.js"></script>
+		<script src="js/removeclick.js"></script>	
+		<!-- <script src="js/janela.js"></script> -->
+		<script src="js/menulateral.js"></script>
 </body>
 </html>

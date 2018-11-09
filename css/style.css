@@ -26,22 +26,16 @@ body{
 	padding: 5px;
 }
 
-.icon-facebook{
-
-}
-
-
 /* FIM DO SOCIAL */
 
 /* LOGO */
 
 .Logo{
-	color: #fff;
-	height: 50px;
-	line-height: 50px;
-	font-size: 24px;
-	float: left; 
-	margin-top: -2px;
+	background-color:#000000;
+}
+.logo2{
+	margin-left: 15px;
+	margin-top: 10px;
 }
 
 /* FIM DO LOGO */
@@ -110,7 +104,7 @@ body{
 	position: absolute;
 	text-align: center;
 	right: 1183px;
-	bottom: -60px;
+	bottom: -80px;
 
 }
 
@@ -125,7 +119,7 @@ body{
 	position: absolute;
 	text-align: center;
 	right: 953px;
-	bottom: -1260px;
+	bottom: -1280px;
 
 }
 
@@ -139,39 +133,91 @@ body{
 
 /* MENU */
 
-nav{
-	width: 100%;
-	height: 48px;
-	background-color: #000000;
-	margin-top: 10px;
+.side-menu-wrapper { /* style menu wrapper */
+	background: rgba(0,0,10,.95);
+	padding: 40px 0 0 40px;
+	position: fixed; /* Fixed position */
+	top: 0;
+	left: 0; /* Sidebar initial position. "right" for right positioned menu */
+	height: 100%;
+	z-index: 2;
+	transition: 0.5s; /* CSS transition speed */
+	width: 200px;
+	font: 20px "Courier New", Courier, monospace;
+	box-sizing: border-box;
 
 }
 
-nav ul{
-	list-style: none;
-	text-align: center;
-	margin-top: -10px;
-	margin-right: 60px;
+.side-menu-wrapper > ul{ /* css ul list style */
+	list-style:none;
+	padding:0;
+	margin:0;
+    overflow-y: auto; /* enable scroll for menu items */
+	height:95%;
 
 }
-
-nav ul li{
-	display: inline-block;
-
-}
-
-nav ul li a{
-	color: #ffffff;
+.side-menu-wrapper > ul > li > a { /* links */
+    display: block;
+    border-bottom: 1px solid #131313;
+    padding: 6px 4px 6px 4px;
+    color: #ffffff;
+    transition: 0.3s;
 	text-decoration: none;
-	padding: 15px;
-	display: block; /* Transforma em um bloco clicável */
+
+}
+.side-menu-wrapper > a.menu-close { /* close button */
+    padding: 8px 0 4px 23px;
+    color: #ffffff;
+    display: block;
+    margin: -30px 0 -10px -20px;
+    font-size: 35px;
+    text-decoration: none;
+
+}
+
+
+.menu-overlay { /* overlay */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.menu-open{
+	    display:block;
+		background-color: #000000;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+}
+
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+nav li:hover ul{
+	display: none;
 
 }
 
 nav ul li a:hover{
-	background-color: #00bcff;
-	transition: all 0.5%;
+	background-color: #00bfff;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+	
 }
+
+
 
 /* FIM DO MENU */
 
@@ -272,3 +318,115 @@ nav ul li a:hover{
 
 /* FIM DA PAGINA PECADOS */	
 
+/* PAGINA SOBRE */
+
+.github{
+	float: left;
+	margin-top: 60px;
+	text-align: center;
+	margin-left: 600px;
+	margin-bottom: 30px;
+}
+
+.ninjamock{
+	float: right;
+	margin-top: 60px;
+	text-align: center;
+	margin-right: 600px;
+}
+
+.webhost{
+	float: left;
+	text-align: center;
+	margin-left: 100px;
+	margin-top: 60px;
+}
+
+/* FIM DA PAGINA SOBRE */
+
+/* TRATAMENTO RESPONSIVO */
+
+@media screen and (max-width: 480px){
+
+/* PAGINA PECADOS */
+.meliodas{
+	margin-left: 65px;
+}
+.ban{
+	margin-left: 65px;
+}
+.merlin{
+	margin-left: 65px;
+}
+.king{
+	margin-left: 65px;
+}
+.diane{
+	margin-left: 65px;
+}
+.gowther{
+	margin-left: 65px;
+}
+.escanor{
+	margin-left: 65px;
+}
+
+/* FIM DA PAGINA PECADOS */
+
+/* PAGINA CONTEUDO */
+ 
+.h2conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+	
+}
+.h3conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.imagem2{
+	max-width: 470px;
+	margin-left: -25px;
+}
+.imagem3{
+	max-width: 470px;
+	margin-left: -25px;
+}
+.imagem4{
+	max-width: 470px;
+	margin-left: -25px;
+}
+.imagem5{
+	max-width: 470px;
+	margin-left: -25px;
+}
+.imagem6{
+	max-width: 470px;
+	margin-left: -25px;
+}
+.imagem7{
+	max-width: 470px;
+	margin-left: -25px;
+}
+.imagem8{
+	max-width: 470px;
+	margin-left: -25px;
+}
+
+/* PAGINA CONTATO */
+
+.gif{
+	max-width: 470px;
+	margin-left: -25px;
+}
+
+/* FIM DA PAGINA CONTATO */
+
+/* PAGINA SOBRE */
+
+.github{
+	margin-left: 100px;
+}
+.ninjamock{
+	margin-right: 100px;
+}

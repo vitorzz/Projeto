@@ -5,27 +5,39 @@
 	<link rel="icon" href="imagens/icon.jpg">
 	<title>Conteudo</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+
 </head>
 <body>
 
-<!-- MENU -->
+	<header class="Logo">
+		<img class="logo2" src="imagens/logo.jpg" alt="Pecado da Ganância">
+	</header>
 
-	<nav>
+	<!-- MENU -->
+
+
+		<div class="menu-overlay"></div>
+		<nav class="menu">
+		<a href="#" class="menu-open">&#9776 Menu</a>
+
+		<div class="side-menu-wrapper">
+		<a href="#" class="menu-close">×</a>
 		<ul>
-			<img class ="Logo" src="imagens/logo.jpg" alt="pecado da ganância">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="sobre.html">Sobre</a></li>
-			<li><a href="conteudo.html">Conteúdo</a></li>
-			<li><a href="contato.html">Contato</a></li>
-			<li><a href="pecados.html">Pecados</a></li>
-
-		</ul>
-	</nav>
+		<li><a href="index.html"  rel="nofollow">Home</a></li>
+		<li><a href="sobre.html"  rel="nofollow">Sobre</a></li>
+		<li><a href="conteudo.html"  rel="nofollow">Conteúdo</a></li>
+		<li><a href="contato.html"  rel="nofollow">Contato</a></li>
+		<li><a href="pecados.html"  rel="nofollow">Pecados</a></li>
+		</nav>
+		</div>
 
 		<!-- Conteúdo -->
 
 	<div class="imagem1">
-		<img src="imagens/ban3.png" alt="ban">
+		<img class="imagem2" src="imagens/ban3.png" alt="ban">
 	</div>
 
 		<div class="h1conteudo">
@@ -41,7 +53,7 @@
 		</div>
 
 		<div class="imagem1">
-			<img src="imagens/raposa.jpg" alt="raposa">
+			<img class="imagem3" src="imagens/raposa.jpg" alt="raposa">
 		</div>
 
 		<div class="h3conteudo">
@@ -64,7 +76,7 @@
 		<div class="h1conteudo">
 			<h2>Segundo membro mais novo dos Sete Pecados Capitais</h2>
 			<br><br><br>
-			<img src="imagens/ban4.jpg" alt="ban">
+			<img class="imagem4" src="imagens/ban4.jpg" alt="ban">
 		</div>
 
 		<div class="h3conteudo">
@@ -74,7 +86,7 @@
 		<div class="h1conteudo">
 			<h2>Já venceu Meliodas 361 vezes</h2>
 			<br><br><br>
-			<img src="imagens/ban5.jpg" alt="ban">
+			<img class="imagem5" src="imagens/ban5.jpg" alt="ban">
 		</div>
 
 		<div class="h3conteudo">
@@ -84,7 +96,7 @@
 		<div class="h1conteudo">
 			<h2>É virtualmente imortal</h2>
 			<br><br><br>
-			<img src="imagens/ban6.jpg" alt="ban">
+			<img class="imagem6" src="imagens/ban6.jpg" alt="ban">
 		</div>
 
 		<div class="h3conteudo">
@@ -94,7 +106,7 @@
 		<div class="h1conteudo">
 			<h2>Courechouse</h2>
 			<br><br>
-			<img src="imagens/ban7.jpg" alt="ban">
+			<img class="imagem7" src="imagens/ban7.jpg" alt="ban">
 		</div>
 
 		<div class="h3conteudo">
@@ -104,7 +116,7 @@
 		<div class="h1conteudo">
 			<h2>Poderes e Habilidades de Ban</h2>
 			<br><br>
-			<img src="imagens/ban8.jpg" alt="ban">
+			<img class="imagem8" src="imagens/ban8.jpg" alt="ban">
 		</div>
 
 		<div class="h3conteudo">
@@ -122,7 +134,11 @@
 			<h3>Já a principal habilidade do personagem é conhecida como arrebatar, e ela basicamente permite que ele roube objetos físicos ou a habilidade de outros seres enfraquecendo-os enquanto ele fica mais forte, porém existe um limite de força que ele pode roubar sem que seu corpo seja prejudicado. Ban consegue ainda “roubar” partes do corpo dos outros antes que eles sequer percebam, como já fez com corações de demônios e com o braço de Meliodas. A Raposa da Ganância também se mostra muito eficaz no combate corpo a corpo e no uso do nunchaku.</h2>
 		</div>
 
-
+		<script src="js/menuresponsivo.js"></script>
+		<script src="js/fixamenu.js"></script>
+		<script src="js/removeclick.js"></script>	
+		<!-- <script src="js/janela.js"></script> -->
+		<script src="js/menulateral.js"></script>
 </body>
 </html>
 
