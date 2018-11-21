@@ -186,7 +186,9 @@ nav ul li a:hover{
 .Layout p{
 	text-align:center;
 	color: #000000;
-	font-size: 2.5em;
+	font-size: 3.5em;
+	padding: 20px;
+	margin-top: 5px;
 }
 
 .DivTexto{
@@ -266,8 +268,30 @@ nav ul li a:hover{
 	margin-top: -120px;
 }
 
-
 /* FIM DO LAYOUT HOME*/
+
+/* RODAPÉ */
+
+footer{
+	width: 100%;
+	background-color: #00BFFF;
+	margin-top: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.rodape{
+	margin-top: 180px;
+}
+
+.rodape2{
+	margin-top: 80px;
+}
+
+
+/* FIM DO RODAPÉ */
 
 /* PAGINA CONTEUDO */
 
@@ -369,6 +393,104 @@ nav ul li a:hover{
 /* TRATAMENTO RESPONSIVO */
 
 /* 1° PONTO DE QUEBRA */
+
+@media screen and (max-width: 1366px){
+
+/* PAGINA PECADOS */
+
+.meliodas{
+	margin-left: 500px;
+}
+.ban{
+	margin-left: 700px;
+	margin-right: 160px;
+	margin-top: -20px;
+}
+.merlin{
+	margin-left: 295px;
+}
+.king{
+	margin-left: 95px;
+}
+.diane{
+	margin-left: 295px;
+	margin-right: 195px;
+	margin-top: -800px;
+	float: left;
+}
+.gowther{
+	margin-left: 295px;
+
+}
+.escanor{
+	margin-left: 715px;
+	margin-top: -390px;
+	margin-bottom: 20px;
+}
+
+/* FIM DA PAGINA PECADOS */
+
+
+/* HOME */
+
+.foto{
+	margin-left: -65px;
+
+}
+.foto2{
+	margin-left: -110px;
+}
+
+.titulo{
+	margin-left: 170px;
+}
+
+.texto{
+	margin-left: 170px;
+
+}
+
+.titulo2{
+
+	margin-left: 350px;
+}
+
+.texto2{
+	margin-left: 352px;	
+}
+
+.botao{
+	margin-bottom: -60px;
+	right: 915px; 
+		
+}
+.botao2{
+	margin-bottom: -90px;
+	right: 730px; 
+}
+
+/* FIM DA HOME */
+
+/* PAGINA SOBRE */
+
+.github{
+	margin-left: 480px;
+}
+.ninjamock{
+	margin-right: 480px;
+}
+.webhost{
+	margin-left: 105px;
+}
+
+/* FIM DA PAGINA SOBRE */
+
+
+}
+
+/* TRATAMENTO RESPONSIVO */
+
+/* 2° PONTO DE QUEBRA */
 
 @media screen and (max-width: 1024px){
 
@@ -525,7 +647,7 @@ nav ul li a:hover{
 
 /* TRATAMENTO RESPONSIVO */
 
-/* 2° PONTO DE QUEBRA */
+/* 3° PONTO DE QUEBRA */
 
 @media screen and (max-width: 768px){
 
@@ -684,7 +806,7 @@ nav ul li a:hover{
 
 /* TRATAMENTO RESPONSIVO */
 
-/* 3° PONTO DE QUEBRA */
+/* 4° PONTO DE QUEBRA */
 
 @media screen and (max-width: 480px){
 
@@ -731,32 +853,36 @@ nav ul li a:hover{
 	margin-left: 0px;
 	margin-right: 0px;
 }
+.imagem1{
+	max-width: 420px;
+	margin-left: 2px;
+}
 .imagem2{
-	max-width: 470px;
+	max-width: 420px;
 	margin-left: -25px;
 }
 .imagem3{
-	max-width: 470px;
+	max-width: 420px;
 	margin-left: -25px;
 }
 .imagem4{
-	max-width: 470px;
+	max-width: 420px;
 	margin-left: 2px;
 }
 .imagem5{
-	max-width: 470px;
+	max-width: 420px;
 	margin-left: 2px;
 }
 .imagem6{
-	max-width: 470px;
+	max-width: 420px;
 	margin-left: 2px;
 }
 .imagem7{
-	max-width: 470px;
+	max-width: 420px;
 	margin-left: 2px;
 }
 .imagem8{
-	max-width: 470px;
+	max-width: 420px;
 	margin-left: 2px;
 }
 
